@@ -2,7 +2,7 @@
   "name": "test_000webh",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "api.js",
   "scripts": {
     "build": "netlify deploy --prod"
   },
@@ -17,8 +17,5 @@
     "netlify-lambda": "^2.0.16",
     "nodemon": "^2.0.22",
     "serverless-http": "^3.2.0"
-  },
-  "devDependencies": {
-    "ftp-deploy": "^2.4.3"
   }
 }
