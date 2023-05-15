@@ -2,8 +2,10 @@
   "name": "test_000webh",
   "version": "1.0.0",
   "description": "",
-  "main": "api.js",
+  "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node functions/api.js",
     "build": "netlify deploy --prod"
   },
   "keywords": [],
@@ -13,9 +15,9 @@
     "dotenv": "^16.0.3",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "netlify-cli": "^15.0.3",
-    "netlify-lambda": "^2.0.16",
-    "nodemon": "^2.0.22",
-    "serverless-http": "^3.2.0"
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "ftp-deploy": "^2.4.3"
   }
 }

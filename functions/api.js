@@ -7,7 +7,6 @@ require("dotenv").config();
 
 app.set("view engine","ejs");
 
-app.use('/.netlify/functions/api',router);
 
 router.get("/",(req,res)=>{
     //res.render("../view/index");
@@ -21,4 +20,5 @@ app.listen(3000,()=>{
 });
 
 
+app.use('/.netlify/functions/api',router);
 module.exports.handler = serverless(app);
